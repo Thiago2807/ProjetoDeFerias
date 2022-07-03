@@ -4,3 +4,26 @@
     border: 0;
     box-sizing: border-box
 }
+body{
+    overflow-x:hidden;
+    background-color: bisque;
+    display: grid;
+
+    grid-template-columns: 10vw 80vw 10vw;
+    grid-template-rows: 10vh 80vh 10vh;
+
+    grid-template-areas:
+    "header header header"
+    ". main ."
+    "footer footer footer"
+    ;
+}
+main{
+    background-color: rgb(255, 0, 0);
+    grid-area: main;
+    margin: 10px 0px 10px 0px;
+}
+footer{
+    background-color: rgb(255, 60, 0);
+    grid-area: footer;
+}

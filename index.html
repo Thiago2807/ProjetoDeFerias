@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/menu.css">
         <title>Home</title>
     </head>
     <body>
-        
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt=""></a>
+            </div>
+            <nav id="nav">
+                <script src="js/menu/script_menu.js"></script>
+
+                <button id="btn-mobile" onclick="toggleMenu()" arial-haspopup="true">
+                <span id="hamburguer"></span>
+                </button>                    
+                <ul id="menuul" type="none" role="menu">
+                    <li><a href="videos.html" rel="next" target="_self">MVs</a></li>
+                    <li><a href="musicas.html" rel="next" target="_self">Mùsicas</a></li>
+                    <li><a href="trajetoria.html" rel="next" target="_self">Trajetória</a></li>
+                    <li><a href="login.html" rel="next" target="_self">Login/Registrar</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            
+        </main>
+        <footer>
+            <div class="conteudo">
+                ola
+            </div>
+            <div class="img">
+                <a href="https://www.youtube.com/channel/UCUXfRsEIJ9xO1DT7TbEWksw" rel="external" target="_black"><img src="img/mv_norm_center.png" alt=""></a>
+            </div>
+            <div class="conteudo">
+                ola
+            </div>
+        </footer>
     </body>
 </html>
