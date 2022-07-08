@@ -1,0 +1,78 @@
+footer{
+    color: #f2f2f2;
+    grid-area: f;
+    border-top: 2px solid #ff4500;
+    background-color: #0c0c0c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 55px 20px 55px 40px;
+}
+footer li a p{
+    margin: 0 20px 0px 0px;
+    color: white;
+}
+footer .logo-footer{
+    display: flex;
+    border-right: 1px solid #ff4500;
+    padding-right: 20px;
+    height: 11vh;
+}
+footer .logo-footer a img{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 10px;
+}
+#conteudo-princ-footer{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+#conteudo-footer{
+    display: flex;
+    border-right: 1px solid #ff4500;
+    padding-right: 20px;
+    margin-left: 5%;
+}
+footer nav li img{
+    width: 20px;
+    margin: 2% 10px 0 0;
+}
+footer nav ul{
+    padding: 10px;
+    display: flex;
+}
+#conteudo-eve{
+    margin:0 0 0 5%;
+}
+
+@media(max-width: 1000px){
+    #conteudo-princ-footer{
+        font-size: 12px;
+    }
+    footer .logo-footer a img{
+        width: 5rem;
+        height: 5rem;
+    }
+    #conteudo-footer{
+        padding-right: 10px;
+        margin-left: 1px;
+    }
+    #conteudo-eve{
+        margin-left: 10px;
+    }
+    footer nav ul{
+        gap: 10px;
+    }
+}
+@media(max-width: 600px){
+    footer{
+        padding-left: 0;
+    }
+    #conteudo-princ-footer{
+        font-size: 9px;
+    }
+    footer .logo-footer{
+        display: none;
+    }
+}

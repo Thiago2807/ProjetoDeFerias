@@ -1,14 +1,20 @@
 header{
     /* Cor apenas para ver o texto */
+    position: fixed;
+    width: 100%;
+    height: 10vh;
     color: #f2f2f2;
-    background-color: #1c1c1c;
-    grid-area: header;
+    background-color: #0c0c0c;
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    padding: 1vw;
+    padding: 1%;
     justify-content: space-between;
-    box-shadow: 0px 0px 2px #000000;
+    box-shadow: 0px 0px 3px red;
+    border-bottom: 1px solid #ff4500;
+}
+a{
+    text-decoration: none;
 }
 .logo{
     width: 100px;
@@ -23,18 +29,14 @@ header{
 }
 
 /* Menu amigão */
-.menu{
-    border: solid 1px #f2f2f2;
-}
-a{
+header #nav #menuul li a{
     color: #f2f2f2;
     text-decoration: none;
     font-size: 15px;
     text-align: center;
 }
-#menuul a:hover{
-    background-color: #87c4af;
-    color: black;
+header #nav #menuul li a:hover{
+    font-size: 20px;
 }
 #menuul a{
     display: block;
@@ -51,23 +53,11 @@ a{
     font-size: 15px;
 }
 @media(max-width: 600px){
-    body{
-        overflow-x:hidden;
-        background-color: black;
-        display: grid;
-    
-        grid-template-columns: 5vw 90vw 5vw;
-        grid-template-rows: 5vh 90vh 5vh;
-    
-        grid-template-areas:
-        "header header header"
-        ". main ."
-        "footer footer footer"
-        ;
-    }
-    footer .img img{
-        width: 5vw;
-        height: 4vh;
+    header #nav #menuul li a:hover{
+        font-size: 15px;
+        border-radius: 10px;
+        background-color: #ff4500;
+        color: black;
     }
     .logo{
         width: 50px;
@@ -86,9 +76,9 @@ a{
         border-radius: 0px 0px 10px 10px;
         position: absolute;
         width: 60%;
-        top: 5vh;
+        top: 9.9vh;
         right: 0px;
-        background-color: #2e2628;
+        background-color: #0c0c0c;
         z-index: 1000;
         transition: .6s;
         height: 0px;
@@ -103,7 +93,7 @@ a{
     #menuul a{
         padding: 1rem 0;
         margin:  0 1rem;
-        border-bottom: 2px solid rgb(255, 255, 255);
+        border-bottom: 2px solid #ffffff;
     }
     #btn-mobile{
         display: flex;
@@ -116,7 +106,7 @@ a{
 
     #hamburguer{
         width: 20px;
-        border-top: 2px solid #f2f2f2;
+        border-top: 2px solid #ff4500;
         display: block;
         margin: 3px 0px 3px 0px;
     }
@@ -128,7 +118,7 @@ a{
         height: 1px;
         margin-top: 3px;
         background-color: currentColor;
-        color: #f2f2f2;
+        color: #ff4500;
         transition: .5s;
         position: relative;
     }
@@ -137,11 +127,11 @@ a{
     }
     #nav.active #hamburguer::before{
         transform: rotate(135deg);
-        background-color: #f2f2f2;
+        background-color: #ff4500;
     }
     #nav.active #hamburguer::after{
         transform: rotate(-135deg);
         top: -4px;
-        background-color: #f2f2f2;
+        background-color: #ff4500;
     }
 }
