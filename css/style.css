@@ -10,7 +10,7 @@ body{
     background-color: white;
     display: grid;
 
-    grid-template-columns: 15vw 80vw 15vw;
+    grid-template-columns: 10vw 85vw 15vw;
     grid-template-rows: 10vh 100% 10vh;
 
     grid-template-areas:
@@ -41,7 +41,7 @@ main{
 }
 .conteudo-main h2{
     font-size: 20px;
-    text-align: justify;
+    text-align: center;
 }
 .conteudo-main p{
     text-align:left;
@@ -55,8 +55,57 @@ main{
 .conteudo-main .img-conteudo a img{
     width: 50vw;
     border-radius: 4px;
-    box-shadow: 0px 0px 5px black;
+    box-shadow: 0px 0px 5px #0c0c0c;
 }
+.albuns{
+    display: flex;
+    justify-content: center;
+    height: 151px;
+    color: #f2f2f2;
+}
+.albuns .img-album{
+    border-top: 1px solid #ff4500;
+    border-left: 1px solid #ff4500;
+    border-bottom: 1px solid #ff4500;
+    border-radius: 3px;
+    background-color: #0c0c0c;
+    height: 115px;
+    transition: .6s;
+}
+.albuns a .img-album img{
+    width: 120px;
+    height: 110px;
+    border-radius: 5px;
+    padding: 4px;
+}
+.albuns .infor-album{
+    border-top: 1px solid #ff4500;
+    border-right: 1px solid #ff4500;
+    border-bottom: 1px solid #ff4500;
+    border-radius: 3px;
+    background-color: #0c0c0c;
+    margin-left: 5px;
+    width: 60%;
+    height: 115px;
+    text-align: center;
+    transition: .6s;
+}
+.albuns .infor-album h1{
+    font-size: 10px;
+    margin-left: 1%;
+    margin-top: 2%;
+}
+.albuns .infor-album h2{
+    font-size: 20px;
+    line-height: 16px;
+}
+.albuns .infor-album:hover{
+    box-shadow: 0px 0px 10px #ff4500;
+}
+.albuns .img-album:hover{
+    box-shadow: 0px 0px 10px #ff4500;
+}
+
 @media(max-width: 600px){
     .conteudo-main .img-conteudo a img{
         width: 100%;
