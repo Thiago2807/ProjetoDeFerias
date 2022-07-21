@@ -7,7 +7,7 @@
 body{
     font-family: 'Mingzat', sans-serif;
     overflow-x:hidden;
-    background-color: white;
+    background-color: #e7e7e7;
     display: grid;
 
     grid-template-columns: 10vw 85vw 15vw;
@@ -20,8 +20,6 @@ body{
     ;
 }
 main{
-    /* border-left: 1px solid;
-    border-right: 1px solid; */
     grid-area: main;
     margin: 2% 0 2% 0;
 }
@@ -95,10 +93,10 @@ main{
     line-height: 16px;
 }
 .albuns a .infor-album:hover{
-    box-shadow: 0px 0px 10px #ff4500;
+    box-shadow: 0px 0px 10px rgb(255, 69, 0,0.555);
 }
 .albuns .img-album:hover{
-    box-shadow: 0px 0px 10px #ff4500;
+    box-shadow: 0px 0px 10px rgb(255, 69, 0,0.555);
 }
 @media(max-width: 600px){
     .conteudo-main .img-conteudo a img{
